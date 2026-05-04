@@ -4,18 +4,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css">    
+<link rel="stylesheet" href="../css/styles.css"> 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
     <title>Fitlife | IMC</title>
 </head>
 <body>
    
     <nav>
  
-        <a class="logo" href="../index.html">FitLife</a>
+        <a class="logo" href="index.html"><i class="fas fa-heartbeat"></i>FitLife
+        </a>
  
         <ul class="nav-links">
-            <li><a class="nav-links" href="../index.html">HOME</a></li>
-            <li><a class="nav-links" id="nav-active" href="imc.html">IMC</a></li>
+            <li><a class="nav-links" id="nav-active" href="../index.html">HOME</a></li>
+            <li><a class="nav-links" href="imc.html">IMC</a></li>
             <li><a class="nav-links" href="tmb.html">TMB</a></li>
             <li><a class="nav-links" href="water.html">Água</a></li>
  
@@ -25,19 +30,26 @@
  
  
     <main>
-        <section>
+        <section class="tool-container">
 
-            <h1>Cálculo de IMC</h1>
+            <div class="tool-container-title">
+                <h2><i class="fas fa-weight"></i>Calculo de IMC</h2>
+            </div>
 
             <form>
 
-                <label for="weight">Peso (Kg)</label>
-                <input type="text" id="weight" placeholder="Ex: 70">
-
-                <label for="height">Altura(m)</label>
-                <input type="number" id="height" placeholder="Ex: 1.7" step="any"></input>
+                <div class="form-group">
+                    <label for="weight">Peso (Kg)</label>
+                    <input type="text" id="weight" placeholder="Ex: 70" required>
+                </div>
                 
-                <button>Calcular</button>
+                <div class="form-group">
+                    <label for="height">Altura(m)</label>
+                    <input type="number" id="height" placeholder="Ex: 1.7" required step="any"></input>
+                </div>
+                
+                
+                <button class="action-btn">Calcular</button>
 
             </form>
 
@@ -49,7 +61,7 @@
                 
 
             </div>
-            <a href="../index.html">Voltar</a>
+            <a class="action-btn" href="../index.html">Voltar</a>
 
         </section>
     </main>
