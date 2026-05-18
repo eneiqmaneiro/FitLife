@@ -49,17 +49,15 @@
                 </div>
                 
                 
-                <button class="action-btn">Calcular</button>
-
+                <button class="action-btn" type="submit" onclick="calculateIMC(event)">Calcular</button>
+                <a class="action-btn btn-back" href="../index.html">Voltar</a>
             </form>
 
-            <a class="action-btn btn-back" href="../index.html">Voltar</a>
-
-            <div class="result-box">
+            <div id="result" class="result-box">
 
                 <p>Seu IMC é:</p>
-                <h2>00.00</h2>
-                <p>Classificação</p>
+                <h2 id="imc-value">00.00</h2>
+                <p id="imc-desc">Classificação</p>
                 
 
             </div>
@@ -67,6 +65,7 @@
         </section>
     </main>
  
+    <script src="../js/imc.js"></script>
  
 </body>
 </html>
